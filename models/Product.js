@@ -16,10 +16,12 @@ Product.init(
       autoIncrement: true,
       allowNull: false,
     },
+
     product_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
@@ -27,6 +29,7 @@ Product.init(
         isDecimal: true,
       },
     },
+
     stock: {
       type: DataTypes.INTEGER,
       defaultValue: 10,
@@ -35,6 +38,7 @@ Product.init(
         isNumeric: true,
       },
     },
+    
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
